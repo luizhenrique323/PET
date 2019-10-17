@@ -620,6 +620,30 @@ div.company footer p{
 }
 
 /*==================================================================
+[ Janela Modal ]*/
+div.modal-header h3#TituloModalLabel{
+  font-family: 'Godofwar';
+  color: rgb(64, 64, 64);
+}
+
+span#labelGenero{
+  margin-left: -30px;
+}
+div#iContainerGenero{
+  margin-left: 30px;
+}
+
+
+div#iButtons{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-top: 1px solid rgb(227, 230, 232);
+}
+
+
+/*==================================================================
 [ Container de Informações ]*/
 div.info{
   height: 50px;

@@ -5,10 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -78,7 +79,7 @@
 					
 					<div class="text-center p-t-46 p-b-20">    <!-- Cadastra-se -->
 						<footer>
-							<a href="#" class="txt2">Cadastra-se?</a>							
+							<a href="#modalCrud" data-toggle="modal" data-target="#modalCrud" class="txt2">Cadastra-se?</a>							
 						</footer>
 					</div>
 
@@ -98,6 +99,94 @@
 					  </footer>
 					</div>
 				</form>
+
+				<!-- Modal -->
+				<div class="modal fade" id="modalCrud" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h3 id="TituloModalLabel">CADASTRO DE USUÁRIO</h3>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <form>			    		         
+					          <div class="form-group">
+					          	<label for="iInputNome">Nome</label>
+					        	<input type="text" class="form-control" id="iInputNome" name="InputNome" maxlength="50" placeholder="Digite seu nome ...">
+					          </div>
+
+					        <!-- -->
+					        <div class="form-row">
+					          <div class="col-md-4 mb-2">	
+						          <div class="form-group">	
+								   	<label for="iInputPassword">Senha</label>
+								   	<input type="password" class="form-control" id="iInputPassword" name="InputPassword" maxlength="12" placeholder="Crie uma Senha">
+						          </div>
+					          </div>
+					          <div class="col-md-8 mb-2">
+						          <div class="form-group">
+						            <label for="iInputEmail">E-mail</label>
+		    						<input type="email" class="form-control" id="iInputEmail" name="InputEmail" maxlength="30" aria-describedby="emailHelp" placeholder="Digite seu e-mail ...">				        	
+						          </div>
+					          </div>					          
+					        </div>
+
+					        <!-- -->
+					        <div class="form-row">				        	  
+					          <div class="col-md-4 mb-2">
+						          <div class="form-group">	
+								    <label for="iInputConfPassword">Confirmar Senha</label>
+								    <input type="password" class="form-control" id="iInputConfPassword" name="InputConfPassword" maxlength="12" placeholder="Digite novamente">
+								    <small id="confPassword" class="badge badge-danger">Senha Incorreta!</small>
+								  </div>
+							  </div>
+							  <div class="col-md-8 mb-2">
+								  <div class="form-group">
+						            <label for="iInputConfEmail">Confirmar E-mail</label>
+		    						<input type="email" class="form-control" id="iInputConfEmail" name="InputConfEmail" maxlength="30" aria-describedby="emailHelp" placeholder="Digite novamente seu e-mail ...">	
+		    						<small id="confEmail" class="badge badge-danger">E-mail Incorreto!</small>
+						          </div>
+						      </div>
+							</div>
+
+					          <div class="form-group" id="iContainerGenero">
+					            <span id="labelGenero">Gênero</span><br />	
+					        	<div class="form-check">
+								  <input class="form-check-input" type="radio" name="GeneroRadio" id="iMasculino" value="M">
+								  <label class="form-check-label"  for="iMasculino">
+								    Masculino
+								  </label>
+								</div>
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="GeneroRadio" id="iFeminino" value="F">
+								  <label class="form-check-label" for="iFeminino">
+								    Feminino
+								  </label>
+								</div>
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="GeneroRadio" id="iOutros" value="O">
+								  <label class="form-check-label" for="iOutros">
+								    Outros
+								  </label>
+								</div>
+					          </div>
+
+					          <div class="form-group">	
+					        	<label for="iInputConfPassword">Data de Nascimento</label>
+							    <input type="date" class="form-control" id="iInputConfPassword" name="InputConfPassword">
+					          </div>
+						     					
+						      <div id="iButtons">
+						        <input type="submit" id="iCad" class="btn btn-success btn-lg" value="Cadastrar" data-dismiss="modal"> 
+					      	  </div>
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Fim Modal -->
 
 				<div class="login100-more" style="background-image: url('images/bg-01.jpg');">
 					<div class="row">
@@ -119,9 +208,11 @@
 	
 
 	
-	
+
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/verificacao.js"></script>	
 <!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
