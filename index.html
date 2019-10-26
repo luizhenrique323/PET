@@ -105,6 +105,7 @@
 				  <div class="modal-dialog modal-lg" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
+				      	<img src="images/PET_SLOGAN-RETANGULAR_PROJECT.svg" width="40px">
 				        <h3 id="TituloModalLabel">CADASTRO DE USUÁRIO</h3>
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 				          <span aria-hidden="true">&times;</span>
@@ -113,7 +114,7 @@
 				      <div class="modal-body">
 				        <form>			    		         
 					          <div class="form-group">
-					          	<label for="iInputNome">Nome</label>
+					          	<label for="iInputNome" class="lbl_font">Nome</label>
 					        	<input type="text" class="form-control" id="iInputNome" name="InputNome" maxlength="50" placeholder="Digite seu nome ...">
 					          </div>
 
@@ -121,13 +122,13 @@
 					        <div class="form-row">
 					          <div class="col-md-4 mb-2">	
 						          <div class="form-group">	
-								   	<label for="iInputPassword">Senha</label>
+								   	<label for="iInputPassword" class="lbl_font">Senha</label>
 								   	<input type="password" class="form-control" id="iInputPassword" name="InputPassword" maxlength="12" placeholder="Crie uma Senha">
 						          </div>
 					          </div>
 					          <div class="col-md-8 mb-2">
 						          <div class="form-group">
-						            <label for="iInputEmail">E-mail</label>
+						            <label for="iInputEmail" class="lbl_font">E-mail</label>
 		    						<input type="email" class="form-control" id="iInputEmail" name="InputEmail" maxlength="30" aria-describedby="emailHelp" placeholder="Digite seu e-mail ...">				        	
 						          </div>
 					          </div>					          
@@ -137,14 +138,14 @@
 					        <div class="form-row">				        	  
 					          <div class="col-md-4 mb-2">
 						          <div class="form-group">	
-								    <label for="iInputConfPassword">Confirmar Senha</label>
+								    <label for="iInputConfPassword" class="lbl_font">Confirmar Senha</label>
 								    <input type="password" class="form-control" id="iInputConfPassword" name="InputConfPassword" maxlength="12" placeholder="Digite novamente">
 								    <small id="confPassword" class="badge badge-danger">Senha Incorreta!</small>
 								  </div>
 							  </div>
 							  <div class="col-md-8 mb-2">
 								  <div class="form-group">
-						            <label for="iInputConfEmail">Confirmar E-mail</label>
+						            <label for="iInputConfEmail" class="lbl_font">Confirmar E-mail</label>
 		    						<input type="email" class="form-control" id="iInputConfEmail" name="InputConfEmail" maxlength="30" aria-describedby="emailHelp" placeholder="Digite novamente seu e-mail ...">	
 		    						<small id="confEmail" class="badge badge-danger">E-mail Incorreto!</small>
 						          </div>
@@ -152,7 +153,7 @@
 							</div>
 
 					          <div class="form-group" id="iContainerGenero">
-					            <span id="labelGenero">Gênero</span><br />	
+					            <span id="labelGenero"  class="lbl_font">Gênero</span><br /> <!-- CONT -->	
 					        	<div class="form-check">
 								  <input class="form-check-input" type="radio" name="GeneroRadio" id="iMasculino" value="M">
 								  <label class="form-check-label"  for="iMasculino">
@@ -174,7 +175,7 @@
 					          </div>
 
 					          <div class="form-group">	
-					        	<label for="iInputConfPassword">Data de Nascimento</label>
+					        	<label for="iInputConfPassword" class="lbl_font">Data de Nascimento</label>
 							    <input type="date" class="form-control" id="iInputConfPassword" name="InputConfPassword">
 					          </div>
 						     					

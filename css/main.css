@@ -622,7 +622,8 @@ div.company footer p{
 /*==================================================================
 [ Janela Modal ]*/
 div.modal-header h3#TituloModalLabel{
-  font-family: 'Godofwar';
+  margin-left: 30px;
+  font-family: 'Orbitron', sans-serif; 
   color: rgb(64, 64, 64);
 }
 
@@ -633,6 +634,9 @@ div#iContainerGenero{
   margin-left: 30px;
 }
 
+.lbl_font{
+  font-family: 'Rajdhani', sans-serif; <!-- CONT -->  
+}
 
 div#iButtons{
   width: 100%;
