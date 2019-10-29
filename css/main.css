@@ -4,11 +4,25 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
 @font-face{
   font-family: 'Godofwar';
   src: url("../fontes/GODOFWAR.TTF");
 }
+
+/*@import url('https://fonts.googleapis.com/css?family=Orbitron|Saira+Stencil+One&display=swap'); */
+/* font-family: 'Orbitron', sans-serif; */
+@font-face{
+  font-family: 'Orbitron';
+  src: url("../fontes/Orbitron-Regular.TTF");
+} 
+
+@font-face{
+  font-family: 'Titillium Web';
+  src: url("../fontes/TitilliumWeb-Regular.TTF");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Iceland&display=swap');
+/* font-family: 'Iceland', cursive; */
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
 /* font-family: 'Rajdhani', sans-serif; */
@@ -19,8 +33,8 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 /* font-family: 'Saira Stencil One', cursive; */
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron|Saira+Stencil+One&display=swap');
-/* font-family: 'Orbitron', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+/* font-family: 'Exo', sans-serif; */
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -315,13 +329,14 @@ p#titulo{
 }
 
 input.input100 {
+  font-family: 'Titillium Web';
   height: 100%;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-
+,
 /*---------------------------------------------*/
 
 .focus-input100 {
@@ -621,10 +636,45 @@ div.company footer p{
 
 /*==================================================================
 [ Janela Modal ]*/
+div.modal-header{
+  background-image: linear-gradient(to bottom, rgba(30, 217, 80, 0.5), #ffffff);
+}
+
 div.modal-header h3#TituloModalLabel{
-  margin-left: 30px;
-  font-family: 'Orbitron', sans-serif; 
-  color: rgb(64, 64, 64);
+  margin: 0px;
+  margin-top: 4px;
+  width: 100%;
+  font-family: Candara, cursive;
+  text-align: center;
+  color: #595959;
+}
+
+/* --- */
+/*div#Container_Pass{
+  border-right: 1px solid #bfbfbf;
+}*/
+
+input#iInputPassword, input#iInputConfPassword{
+  width: 230px;
+}
+
+input#iInputEmail, input#iInputConfEmail{
+  width: 450px;
+  margin-left: 20px;
+ 
+}
+
+input#iInputDate{
+  width: 300px;
+  margin-left: 20px;
+}
+input#iInputPhone{
+  width: 300px;
+  margin-left: 20px;
+}
+
+span.lbl_FormRight{
+  margin-left: 20px;
 }
 
 span#labelGenero{
@@ -633,17 +683,17 @@ span#labelGenero{
 div#iContainerGenero{
   margin-left: 30px;
 }
-
-.lbl_font{
-  font-family: 'Rajdhani', sans-serif; <!-- CONT -->  
-}
+/* --- */
 
 div#iButtons{
+  margin: 0px;
   width: 100%;
+  height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   border-top: 1px solid rgb(227, 230, 232);
+  background-image: linear-gradient(to top, rgba(30, 217, 208, 0.5), #ffffff);
 }
 
 
@@ -658,7 +708,7 @@ div.info{
   position: relative;
   top: 10px;
   padding-top: 10px;
-  background-image: linear-gradient(to top, #22c5db50, #40ce762d);  
+  background-image: linear-gradient(to bottom, #22c5db50, #40ce762d);  
   text-align: center;
   font-weight: bold;
 }
@@ -670,3 +720,26 @@ div.info p{
 }
 
 
+/*==================================================================
+[ Class Default ]*/
+.lbl_font{
+  font-family: 'Orbitron', sans-serif;
+  color: #8c8c8c;
+}
+
+form input.form-control{
+  font-family: 'Titillium Web', sans-serif;
+  color: #006652;
+  font-size: 14pt;
+}
+form input.form-control:focus{
+  color: #006652;
+}
+form input.form-control::placeholder{
+  color: #cde4e0;
+}
+.form-check-label{
+  font-family: 'Titillium Web', sans-serif;
+  color: #006652;
+  font-size: 14pt;
+}

@@ -48,7 +48,7 @@
 					
 					<!-- Input Senha -->
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
+						<input class="input100"  type="password" name="pass">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Senha</span>
 					</div>
@@ -105,14 +105,14 @@
 				  <div class="modal-dialog modal-lg" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
-				      	<img src="images/PET_SLOGAN-RETANGULAR_PROJECT.svg" width="40px">
-				        <h3 id="TituloModalLabel">CADASTRO DE USUÁRIO</h3>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+					    <img src="images/PET_SLOGAN-RETANGULAR_PROJECT.svg" width="40px">
+					    <h3 id="TituloModalLabel">CADASTRO DE USUÁRIO</h3>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" >
 				          <span aria-hidden="true">&times;</span>
 				        </button>
 				      </div>
 				      <div class="modal-body">
-				        <form>			    		         
+				        <form id="cadastro_pet">			    		         
 					          <div class="form-group">
 					          	<label for="iInputNome" class="lbl_font">Nome</label>
 					        	<input type="text" class="form-control" id="iInputNome" name="InputNome" maxlength="50" placeholder="Digite seu nome ...">
@@ -120,70 +120,73 @@
 
 					        <!-- -->
 					        <div class="form-row">
-					          <div class="col-md-4 mb-2">	
+					          <div class="col-md-4 mb-2" id="Container_Pass">
 						          <div class="form-group">	
 								   	<label for="iInputPassword" class="lbl_font">Senha</label>
 								   	<input type="password" class="form-control" id="iInputPassword" name="InputPassword" maxlength="12" placeholder="Crie uma Senha">
 						          </div>
-					          </div>
-					          <div class="col-md-8 mb-2">
-						          <div class="form-group">
-						            <label for="iInputEmail" class="lbl_font">E-mail</label>
-		    						<input type="email" class="form-control" id="iInputEmail" name="InputEmail" maxlength="30" aria-describedby="emailHelp" placeholder="Digite seu e-mail ...">				        	
-						          </div>
-					          </div>					          
-					        </div>
-
-					        <!-- -->
-					        <div class="form-row">				        	  
-					          <div class="col-md-4 mb-2">
 						          <div class="form-group">	
 								    <label for="iInputConfPassword" class="lbl_font">Confirmar Senha</label>
 								    <input type="password" class="form-control" id="iInputConfPassword" name="InputConfPassword" maxlength="12" placeholder="Digite novamente">
 								    <small id="confPassword" class="badge badge-danger">Senha Incorreta!</small>
 								  </div>
-							  </div>
-							  <div class="col-md-8 mb-2">
-								  <div class="form-group">
-						            <label for="iInputConfEmail" class="lbl_font">Confirmar E-mail</label>
+					          </div>
+					          <div class="col-md-8 mb-2">
+						          <div class="form-group">
+						            <label for="iInputEmail" class="lbl_font"><span class="lbl_FormRight">E-mail</span></label>
+		    						<input type="email" class="form-control" id="iInputEmail" name="InputEmail" maxlength="30" aria-describedby="emailHelp" placeholder="Digite seu e-mail ...">				        	
+						          </div>
+						          <div class="form-group">
+						            <label for="iInputConfEmail" class="lbl_font"><span class="lbl_FormRight">Confirmar E-mail</span></label>
 		    						<input type="email" class="form-control" id="iInputConfEmail" name="InputConfEmail" maxlength="30" aria-describedby="emailHelp" placeholder="Digite novamente seu e-mail ...">	
 		    						<small id="confEmail" class="badge badge-danger">E-mail Incorreto!</small>
 						          </div>
-						      </div>
-							</div>
+					          </div>					          
+					        </div>	   					        
 
-					          <div class="form-group" id="iContainerGenero">
-					            <span id="labelGenero"  class="lbl_font">Gênero</span><br /> <!-- CONT -->	
-					        	<div class="form-check">
-								  <input class="form-check-input" type="radio" name="GeneroRadio" id="iMasculino" value="M">
-								  <label class="form-check-label"  for="iMasculino">
-								    Masculino
-								  </label>
-								</div>
-								<div class="form-check">
-								  <input class="form-check-input" type="radio" name="GeneroRadio" id="iFeminino" value="F">
-								  <label class="form-check-label" for="iFeminino">
-								    Feminino
-								  </label>
-								</div>
-								<div class="form-check">
-								  <input class="form-check-input" type="radio" name="GeneroRadio" id="iOutros" value="O">
-								  <label class="form-check-label" for="iOutros">
-								    Outros
-								  </label>
-								</div>
+					        <!-- -->
+					        <div class="form-row">
+					          <div class="col-md-4 mb-2">
+						          <div class="form-group" id="iContainerGenero">
+						            <span id="labelGenero"  class="lbl_font">Gênero</span><br /> <!-- CONT -->	
+						        	<div class="form-check">
+									  <input class="form-check-input" type="radio" name="GeneroRadio" id="iMasculino" value="M">
+									  <label class="form-check-label"  for="iMasculino">
+									    Masculino
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="GeneroRadio" id="iFeminino" value="F">
+									  <label class="form-check-label" for="iFeminino">
+									    Feminino
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="GeneroRadio" id="iOutros" value="O">
+									  <label class="form-check-label" for="iOutros">
+									    Outros
+									  </label>
+									</div>
+						          </div>
 					          </div>
-
-					          <div class="form-group">	
-					        	<label for="iInputConfPassword" class="lbl_font">Data de Nascimento</label>
-							    <input type="date" class="form-control" id="iInputConfPassword" name="InputConfPassword">
+					          <div class="col-md-8 mb-2">
+						          <div class="form-group">	
+						        	<label for="iInputDate" class="lbl_font"><span class="lbl_FormRight">Data de Nascimento</span></label>
+								    <input type="date" class="form-control" id="iInputDate" name="InputDate">
+						          </div>
+								  <div class="form-group">
+								  	<label for="iInputPhone" class="lbl_font"><span class="lbl_FormRight">Telephone</span></label>
+								    <input type="tel" class="form-control" id="iInputPhone" name="InputPhone" maxlength="14" placeholder="(00)90000-0000">
+								  </div>
 					          </div>
-						     					
-						      <div id="iButtons">
-						        <input type="submit" id="iCad" class="btn btn-success btn-lg" value="Cadastrar" data-dismiss="modal"> 
-					      	  </div>
+					        </div>
 				        </form>
 				      </div>
+
+				      <div id="iButtons">
+						<button type="submit" form="cadastro_pet" id="iCad" class="btn btn-success btn-lg">Cadastrar</button>
+					  </div>
+
 				    </div>
 				  </div>
 				</div>
