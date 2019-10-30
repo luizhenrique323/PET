@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>PET+</title>
+	<title>LOGIN PET+</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #666666;">
@@ -41,14 +41,14 @@
 					
 					<!-- Input Email -->
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
+						<input class="input100" id="iInputLogin" type="text" name="email">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Email</span>
 					</div>
 					
 					<!-- Input Senha -->
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100"  type="password" name="pass">
+						<input class="input100" id="iInputSenha" type="password" name="pass">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Senha</span>
 					</div>
@@ -70,16 +70,15 @@
 			
 
 					<div class="container-login100-form-btn">   <!-- Button -->
-						<button class="login100-form-btn" >
-							Entrar
-							
+						<button type="button" class="login100-form-btn" >
+							Entrar							
 						</button>
 						
 					</div>
 					
 					<div class="text-center p-t-46 p-b-20">    <!-- Cadastra-se -->
 						<footer>
-							<a href="#modalCrud" data-toggle="modal" data-target="#modalCrud" class="txt2">Cadastra-se?</a>							
+							<a id="iBtnCadastro" href="#modalCrud" data-toggle="modal" data-target="#modalCrud" class="txt2">Cadastra-se?</a>							
 						</footer>
 					</div>
 
@@ -175,7 +174,7 @@
 								    <input type="date" class="form-control" id="iInputDate" name="InputDate">
 						          </div>
 								  <div class="form-group">
-								  	<label for="iInputPhone" class="lbl_font"><span class="lbl_FormRight">Telephone</span></label>
+								  	<label for="iInputPhone" class="lbl_font"><span class="lbl_FormRight">Telefone</span></label>
 								    <input type="tel" class="form-control" id="iInputPhone" name="InputPhone" maxlength="14" placeholder="(00)90000-0000">
 								  </div>
 					          </div>
@@ -194,15 +193,30 @@
 
 				<div class="login100-more" style="background-image: url('images/bg-01.jpg');">
 					<div class="row">
-						<div class="info" class="col-sm-4">
-								<p>Informações</p>
-							</div>
-							<div class="info" class="col-sm-4">
-								<p>PetAdoption</p>		
-							</div>
-							<div class="info" class="col-sm-4">
-								<P>PetFinder</p>
+						<div class="info" id="iPainelTinder" class="col-sm-4">							
+							<div>
+								<P>PetDate</p>
+								<img src="images/up-arrow.png" width="15px">
+							</div><br/><br/><br/>
+							<p class="painelDescricao">Promove a interação de donos de pets que tenha interrese de cruzamento do seus bichinhos. Disponibilizando opções de pets a sua escolha que você poderá curtir ou não curtir para demonstrar interesse e tentar conseguir um match, logo após conseguir um match você poderá entrar em contato com o outro dono do pet e marcar um provável encontro.</p>
 						</div>
+						<div class="info" id="iPainelInf" class="col-sm-4">							
+							<div>
+								<p>Informações</p>
+								<img src="images/up-arrow.png" width="15px">
+							</div><br/><br/><br/>
+							<p class="painelDescricao">A necessidade de uma conexão com diferentes usuários para facilitar o contato entre pessoas que apresentam problemas em comum, fez a formação de uma solução de software que ajuda amantes e donos de animais.
+							Onde promovemos a simplicidade na busca de pets para adoção, além de encontro entre usuários que desejam realizar o cruzamento de seus animais. Juntamente com a possibilidade do sistema disponibilizar e auxiliar na procura de animais que se perderam.
+							O app também visa o fornecimento da busca de pet shops na região onde o usuário se encontra buscando as mais próximas e as com melhor custo benefício.</p>
+						</div>
+						<div class="info" id="iPainelAdocao" class="col-sm-4">
+							<div>
+								<p>PetAdoption</p>
+								<img src="images/up-arrow.png" width="15px">
+							</div><br/><br/><br/>	
+							<p class="painelDescricao">Compartilhamento de lista de animais disponíveis para adoção e escolher o animal através das categorias disponíveis.<p>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -230,7 +244,7 @@
 <!--===============================================================================================-->
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="js/main_script.js"></script>
 
 </body>
 </html>
