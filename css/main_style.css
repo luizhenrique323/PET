@@ -660,7 +660,7 @@ input#iInputPassword, input#iInputConfPassword{
 }
 
 input#iInputEmail, input#iInputConfEmail{
-  width: 450px;
+  width: 100%;
 }
 
 input#iInputDate{
