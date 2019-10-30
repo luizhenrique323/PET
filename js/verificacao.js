@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
 
  
-  $("#iInputPhone").keypress(function( event ){
+ $("#iInputPhone").keypress(function( event ){
     var phone  = $(this).val();
     var qtd    = phone.length;
     var index  = qtd - 1;
@@ -48,7 +48,48 @@ $(document).ready(function(){
     else if (index == 8) {
       $(this).val(phone + '-');
     }
-    
   });
+
+  $("#iInputPhone").focusout(function(){
+    var phone  = $(this).val();
+    var masc   = true;
+    var qtd    = phone.length;
+    var index  = qtd - 1;
+
+    for (var i = 0; i < qtd; i++) {
+        if (phone[i] != '(' && phone[i] != ')' && phone[i] != '-') {
+          masc = false;
+        }
+    }
+
+    var aux;
+    var aux1;
+    if (masc == false) {
+      if (qtd == 10) {
+        aux  = phone.substr(0, 2);
+        aux1 = phone.substr(2 , (phone.length - 1));
+        aux += '9';
+        phone = aux + aux1;
+      }
+      if (phone[0] != '(') {
+        aux = phone;
+        phone = '(' + aux;
+      }
+      if (phone[3] != ')') {
+        aux  = phone.substr(0, 3);
+        aux1 = phone.substr(3, (phone.length - 1));
+        aux += ')';
+        phone = aux + aux1;
+      }
+      if (phone[9] != '-') {
+        aux  = phone.substr(0, 9);
+        aux1 = phone.substr(8, (phone.length - 1));
+        aux += '-';
+        phone = aux + aux1;
+      }
+      $(this).val(phone);
+    }
+  });
+
 });
 
