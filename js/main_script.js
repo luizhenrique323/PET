@@ -13,6 +13,7 @@
         if (login == 'Admin@admin.com' && pass == 'Admin') {
             window.location.href = "main.html";
         }
+        $('input#iInputLogin').val('');
     });  
 
     /*==================================================================

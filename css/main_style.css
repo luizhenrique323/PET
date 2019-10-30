@@ -650,29 +650,24 @@ div.modal-header h3#TituloModalLabel{
 /* --- */
 /*div#Container_Pass{
   border-right: 1px solid #bfbfbf;
+}
+span.lbl_FormRight{
+  margin-left: 20px;
 }*/
 
 input#iInputPassword, input#iInputConfPassword{
-  width: 230px;
+  width: 210px;
 }
 
 input#iInputEmail, input#iInputConfEmail{
   width: 450px;
-  margin-left: 20px;
- 
 }
 
 input#iInputDate{
   width: 300px;
-  margin-left: 20px;
 }
 input#iInputPhone{
   width: 300px;
-  margin-left: 20px;
-}
-
-span.lbl_FormRight{
-  margin-left: 20px;
 }
 
 span#labelGenero{
