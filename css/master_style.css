@@ -33,21 +33,58 @@
 /* font-family: 'Exo', sans-serif; */
 
 
-div.container-menu{
+div.container{
+  width: 100%;
+  padding: 10px; 
   background-image: linear-gradient(to left, rgba(30, 217, 80), rgba(30, 217, 208));
-  padding: 10px;
+  
 }
 
 div#myNavbar{
-  display: flex;
-  margin-left: 150px;
-  margin-top: 25px;
+  margin: auto;
+}
+div#myNavbar ul{
+  margin: 0px;
+}
+div#myNavbar ul li{
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px; 
+  list-style: none;
 }
 
-div#myNavbar ul#menu-itens li a{
+div#myNavbar ul li a{
   color: #ffffff;
-  font-size: 15pt;
+  font-size: 16pt;
   font-family: 'Orbitron', cursive;
+  text-decoration: none;
+}
+div#myNavbar ul li:hover{
+  color: #ccfff2;
+  background-color: rgba(0, 0, 0, .1);
+}
+div#myNavbar ul li:hover a{
+  color: #66ffd9;
+}
+
+div#myLogin{
+  margin: auto;
+}
+div#myLogin ul{
+  margin: 0px;
+}
+div#myLogin ul li{
+  font-size: 12pt;
+  list-style: none;
+}
+
+
+
+
+/*BUTTON LOGIN*/
+div#myNavBar ul#myLogin{
+  
+  background-color: red;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */ 
