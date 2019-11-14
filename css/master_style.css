@@ -37,10 +37,39 @@ div.container{
   width: 100%;
   padding: 10px; 
   background-image: linear-gradient(to left, rgba(30, 217, 80), rgba(30, 217, 208));
-  
+}  
+
+div#myNavbar ul#menu-itens{
+  list-style: none;
+  text-transform: uppercase;
 }
 
-div#myNavbar{
+div#myNavbar li{
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  margin: 20px;
+}
+
+div#myNavbar li:hover{
+  background-color: rgba(0, 0, 0, .1);
+  color: #ccfff2;
+}
+div#myNavbar li{ 
+  transition: background-color 1s;
+}
+div#myNavbar a{  
+  color: #ffffff;
+  font-size: 13pt;
+  font-family: 'Orbitron', cursive;
+  text-decoration: none;
+}
+div#myNavbar a:hover{ 
+  color: #66ffd9;
+}
+
+/*div#myNavbar {
   margin: auto;
 }
 div#myNavbar ul{
@@ -78,14 +107,21 @@ div#myLogin ul li{
   list-style: none;
 }
 
-
+*/
 
 
 /*BUTTON LOGIN*/
-div#myNavBar ul#myLogin{
-  
-  background-color: red;
+div#myLogin ul li{
+  list-style: none;
 }
+
+
+/*Funções PET+*/
+div#app_funcoes{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar{
